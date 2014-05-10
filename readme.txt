@@ -132,3 +132,6 @@ No questions yet.
 = 1.0.1 =
 * Add screenshots
 * readme.txt fixes and updates
+
+= 1.0.2 =
+* Fix: display post ID only on quote CPT list table

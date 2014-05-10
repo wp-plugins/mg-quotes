@@ -13,7 +13,9 @@ class mg_qt_ListTable {
 	}
 	
 	function row_actions($actions, $post) {
-		$actions = array_merge(array('id' => "ID: $post->ID"), $actions);
+		if ($post->post_type === 'mg_qt_quote')
+			$actions = array_merge(array('id' => "ID: $post->ID"), $actions);
+		
 		return $actions;
 	}
 
