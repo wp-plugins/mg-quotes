@@ -5,6 +5,7 @@ class mg_qt_Uninstall {
 	public function __construct() {
 		$this->delete_quotes();
 		$this->delete_taxonomies();
+		$this->remove_caps();
 	}
 	
 	private function delete_quotes() {
@@ -29,6 +30,13 @@ class mg_qt_Uninstall {
 		}
 	}
 	
+	private function remove_caps() {
+		$admin_role = get_role('administrator');
+		
+		foreach ($this->get_caps() as $cap)
+			$admin_role->remove_cap($cap);
+	}
+	
 	private function get_terms($tax_name) {
 		global $wpdb;
 
@@ -39,6 +47,33 @@ class mg_qt_Uninstall {
             WHERE tt.taxonomy = "' . $tax_name . '"';
 
 		return $wpdb->get_results($query);
+	}
+	
+	private function get_caps() {
+		return array(
+			// Category custom taxonomy
+			'manage_quote_categories',
+			'edit_quote_categories',
+			'delete_quote_categories',
+			'assign_quote_categories',
+			// Author custom taxonomy
+			'manage_quote_authors',
+			'edit_quote_authors',
+			'delete_quote_authors',
+			'assign_quote_authors',
+			// CPT
+			'edit_quotes',
+			'edit_others_quotes',
+			'publish_quotes',
+			'read_private_quotes',
+			'read',
+			'delete_quotes',
+			'delete_private_quotes',
+			'delete_published_quotes',
+			'delete_others_quotes',
+			'edit_private_quotes',
+			'edit_published_quotes'
+		);
 	}
 
 }

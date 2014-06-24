@@ -34,8 +34,8 @@ class mg_qt_Metaboxes {
 			'Quote Title',
 			array($this, 'render_title_meta_box'),
 			null,
-			'advanced',
-			'default'
+			'normal',
+			'high'
 		);
 	}
 

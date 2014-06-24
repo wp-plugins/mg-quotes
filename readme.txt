@@ -3,7 +3,7 @@ Contributors: giuliom
 Donate link: 
 Tags: quotes, random quotes
 Requires at least: 3.1
-Tested up to: 3.9
+Tested up to: 3.9.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -24,6 +24,7 @@ Quick features summary:
 * Quickly browse through your quotes with author and/or category filters and full text search
 * Import/Export of quotes between WordPress installations
 * Publish quotes on the front end with widgets, shortcodes and template tags
+* Restrict or allow access to the quotes and the relative operations in admin with fine grained access control 
 * Cleanup on uninstall
 
 **Manage the quotes**
@@ -39,6 +40,42 @@ The authors are implemented with a custom taxonomy, so from the Quotes/Authors p
 
 From the Quotes/All quotes page there is the standard post list table WP user interface to browse through the quotes.
 There is the full text search and two filters for the author and/or the category.
+
+*Restrict or allow access to the quotes and the relative operations in admin with fine grained access control*
+
+The plugin define and assign at installation time the following primitive capabilities to the 'administrator' role:
+
+Category custom taxonomy:
+
+* 'manage_quote_categories'
+* 'edit_quote_categories'
+* 'delete_quote_categories'
+* 'assign_quote_categories'
+
+Author custom taxonomy:
+
+* 'manage_quote_authors'
+* 'edit_quote_authors'
+* 'delete_quote_authors'
+* 'assign_quote_authors'
+
+Quote custom post type:
+
+* 'edit_quotes'
+* 'edit_others_quotes'
+* 'publish_quotes'
+* 'read_private_quotes'
+* 'read'
+* 'delete_quotes'
+* 'delete_private_quotes'
+* 'delete_published_quotes'
+* 'delete_others_quotes'
+* 'edit_private_quotes'
+* 'edit_published_quotes'
+
+Their names should be self-explanatory.
+
+To customize the access control it is sufficient to grant/revoke such caps with a role editing plugin, for example [User Role Editor](http://wordpress.org/plugins/user-role-editor/).
 
 *Import/Export*
 
@@ -135,3 +172,7 @@ No questions yet.
 
 = 1.0.2 =
 * Fix: display post ID only on quote CPT list table
+
+= 1.1 =
+* Feature: Fine grained access control in admin
+* Feature: Support of quote post author(the WP user that entered the quote)

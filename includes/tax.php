@@ -14,7 +14,12 @@ function mg_qt_register_taxonomies() {
 		'show_in_nav_menus'     => true,
 		'show_tagcloud'         => true,
 		'meta_box_cb'           => null,
-		'capabilities'          => array(),
+		'capabilities'          => array(
+			'manage_terms' => 'manage_quote_categories',
+			'edit_terms'   => 'edit_quote_categories',
+			'delete_terms' => 'delete_quote_categories',
+			'assign_terms' => 'assign_quote_categories'
+		),
 		'rewrite' => array('slug' => __('Category', 'mg_qt')),
 		'query_var'             => 'mg_qt_category',
 		'update_count_callback' => ''
@@ -47,7 +52,12 @@ function mg_qt_register_taxonomies() {
 		'show_in_nav_menus'     => true,
 		'show_tagcloud'         => true,
 		'meta_box_cb'           => false,
-		'capabilities'          => array(),
+		'capabilities'          => array(
+			'manage_terms' => 'manage_quote_authors',
+			'edit_terms'   => 'edit_quote_authors',
+			'delete_terms' => 'delete_quote_authors',
+			'assign_terms' => 'assign_quote_authors'
+		),
 		'rewrite' => array('slug' => __('Author', 'mg_qt')),
 		'query_var'             => 'mg_qt_author',
 		'update_count_callback' => ''

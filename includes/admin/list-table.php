@@ -23,8 +23,9 @@ class mg_qt_ListTable {
 		$columns = array(
 			'cb' => '<input type="checkbox">',
 			'title' => __('Title', 'mg_qt'),
-			'taxonomy-mg_qt_author' => __('Author', 'mg_qt'),
-			'taxonomy-mg_qt_category' => __('Category', 'mg_qt')
+			'taxonomy-mg_qt_author' => __('Quote Author', 'mg_qt'),
+			'taxonomy-mg_qt_category' => __('Category', 'mg_qt'),
+			'author' => __('Author', 'mg_qt')
 		);
 		
 		return $columns;
