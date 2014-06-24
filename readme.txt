@@ -43,7 +43,7 @@ There is the full text search and two filters for the author and/or the category
 
 *Restrict or allow access to the quotes and the relative operations in admin with fine grained access control*
 
-The plugin define and assign at installation time the following primitive capabilities to the 'administrator' role:
+The plugin defines and assigns at installation time the following primitive capabilities to the 'administrator' role:
 
 Category custom taxonomy:
 
