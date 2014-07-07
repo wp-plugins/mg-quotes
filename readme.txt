@@ -176,3 +176,6 @@ No questions yet.
 = 1.1 =
 * Feature: Fine grained access control in admin
 * Feature: Support of quote post author(the WP user that entered the quote)
+
+= 1.1.1 =
+* Bug fix: Fix syntax error for older PHP versions

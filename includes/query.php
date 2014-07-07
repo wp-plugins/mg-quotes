@@ -107,10 +107,12 @@ class mg_qt_Query {
 	
 	public static function quote_author_name($post_id) {
 		$author_terms = get_the_terms($post_id, 'mg_qt_author');
-		return empty($author_terms) ?
-			'' :
-			array_values($author_terms)[0]->name
-		;
+		
+		if (empty($author_terms))
+			return '';
+			
+		$author = array_shift($author_terms);
+		return $author->name;
 	}
 	
 	public static function quote_categories($post_id) {
@@ -132,8 +134,6 @@ class mg_qt_Query {
 	}
 	
 	public static function quote_titles() {
-		$titles = array();
-		
 		$query = new WP_Query(array(
 			'post_type' => 'mg_qt_quote',
 			'post_status' => 'publish',
