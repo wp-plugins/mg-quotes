@@ -181,3 +181,6 @@ No questions yet.
 
 = 1.1.1 =
 * Bug fix: Fix syntax error for older PHP versions
+
+= 1.1.2 =
+* Enhancement: group widgets together in Available Widgets area

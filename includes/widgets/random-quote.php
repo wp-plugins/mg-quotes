@@ -13,7 +13,7 @@ class mg_qt_Random_Quote extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'mg_qt_widget_random_quote',
-			__('Random Quote', 'mg_qt'),
+			__('mg Quotes: Random', 'mg_qt'),
 			array(
 				'description' => __('Pick a random quotes. Supports categories and authors', 'mg_qt'),
 				'classname' => 'mg_qt_widget_random_quote'

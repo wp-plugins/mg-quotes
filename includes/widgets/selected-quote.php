@@ -12,7 +12,7 @@ class mg_qt_Selected_Quote extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'mg_qt_widget_selected_quote',
-			__('Selected Quote', 'mg_qt'),
+			__('mg Quotes: Selected', 'mg_qt'),
 			array(
 				'description' => __('Pick a selected quote', 'mg_qt'),
 				'classname' => 'mg_qt_widget_selected_quote'
