@@ -184,3 +184,6 @@ No questions yet.
 
 = 1.1.2 =
 * Enhancement: group widgets together in Available Widgets area
+
+= 1.1.3 =
+* Fix: Flush rewrite rules at plugin activation to avoid permalink problems

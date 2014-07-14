@@ -6,6 +6,7 @@ class mg_qt_Uninstall {
 		$this->delete_quotes();
 		$this->delete_taxonomies();
 		$this->remove_caps();
+		$this->permalinks();
 	}
 	
 	private function delete_quotes() {
@@ -74,6 +75,10 @@ class mg_qt_Uninstall {
 			'edit_private_quotes',
 			'edit_published_quotes'
 		);
+	}
+	
+	private function permalinks() {
+		flush_rewrite_rules();
 	}
 
 }

@@ -8,6 +8,7 @@ class mg_qt_Installer {
 	
 	public function install() {
 		$this->assign_caps();
+		$this->permalinks();
 	}
 	
 	private function assign_caps() {
@@ -42,6 +43,13 @@ class mg_qt_Installer {
 			'edit_private_quotes',
 			'edit_published_quotes'
 		);
+	}
+	
+	private function permalinks() {
+		mg_qt_setup_post_type();
+		mg_qt_register_taxonomies();
+		
+		flush_rewrite_rules();
 	}
 
 }
