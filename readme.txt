@@ -165,25 +165,29 @@ No questions yet.
 
 == Changelog ==
 
-= 1.0 =
-* First release
+= 1.1.4 =
+* Enhancement: Allow quote comments
 
-= 1.0.1 =
-* Add screenshots
-* readme.txt fixes and updates
+= 1.1.3 =
+* Fix: Flush rewrite rules at plugin activation to avoid permalink problems
 
-= 1.0.2 =
-* Fix: display post ID only on quote CPT list table
+= 1.1.2 =
+* Enhancement: group widgets together in Available Widgets area
+
+= 1.1.1 =
+* Bug fix: Fix syntax error for older PHP versions
 
 = 1.1 =
 * Feature: Fine grained access control in admin
 * Feature: Support of quote post author(the WP user that entered the quote)
 
-= 1.1.1 =
-* Bug fix: Fix syntax error for older PHP versions
 
-= 1.1.2 =
-* Enhancement: group widgets together in Available Widgets area
+= 1.0.2 =
+* Fix: display post ID only on quote CPT list table
 
-= 1.1.3 =
-* Fix: Flush rewrite rules at plugin activation to avoid permalink problems
+= 1.0.1 =
+* Add screenshots
+* readme.txt fixes and updates
+
+= 1.0 =
+* First release

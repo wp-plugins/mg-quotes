@@ -28,7 +28,7 @@ function mg_qt_setup_post_type() {
 		'menu_icon'            => 'dashicons-format-quote',
 		'capability_type'      => 'quote',
 		'map_meta_cap'         => true,
-		'supports'             => array('custom-fields', 'author'),
+		'supports'             => array('custom-fields', 'author', 'comments'),
 		'register_meta_box_cb' => null,
 		'taxonomies'           => array(),
 		'has_archive'          => false,
