@@ -3,7 +3,7 @@ Contributors: giuliom
 Donate link: 
 Tags: quotes, random quotes
 Requires at least: 3.1
-Tested up to: 3.9.1
+Tested up to: 3.9.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
