@@ -3,7 +3,7 @@
 Plugin Name: mg Quotes
 Plugin URI: http://mgiulio.info/projects/mg-quotes/
 Description: Manage and publish your favorite quotes with WordPress
-Version: 1.1.4
+Version: 1.1.5
 Author: Giulio 'mgiulio' Mainardi
 Author URI: http://mgiulio.info
 License: GPL2

@@ -31,7 +31,7 @@ function mg_qt_setup_post_type() {
 		'supports'             => array('custom-fields', 'author', 'comments'),
 		'register_meta_box_cb' => null,
 		'taxonomies'           => array(),
-		'has_archive'          => false,
+		'has_archive'          => true,
 		'rewrite'              => array('slug' => 'quotes'),
 		'query_var'            => true,
 		'can_export'           => true,

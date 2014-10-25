@@ -165,6 +165,9 @@ No questions yet.
 
 == Changelog ==
 
+= 1.1.5 =
+* Fix: allow quote listing on front end with permalink /quotes
+
 = 1.1.4 =
 * Enhancement: Allow quote comments
 
