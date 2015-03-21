@@ -27,8 +27,6 @@ Quick features summary:
 * Restrict or allow access to the quotes and the relative operations in admin with fine grained access control 
 * Cleanup on uninstall
 
-~~For more informations and news please visit the official [project page](http://mgiulio.info/projects/mg-quotes/).~~ [Some additional info](https://www.pinterest.com/pin/119415827596386237/).
-
 **Manage the quotes**
 
 Start managing your quotes accessing the new top menu 'Quotes':
@@ -139,6 +137,8 @@ To modify this template the 'mg_qt_quote_markup' filter is available. It it invo
 
 1. The generated html
 1. An associative array with the quote data. The available keys are: 'content', 'author', 'title', 'id'.
+
+**[Some additional info](https://www.pinterest.com/pin/119415827596386237/).**
 
 **Source Code**
 
