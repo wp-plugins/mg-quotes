@@ -3,7 +3,7 @@ Contributors: giuliom
 Donate link: 
 Tags: quotes, random quotes
 Requires at least: 3.1
-Tested up to: 3.9.1
+Tested up to: 4.0.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -27,7 +27,7 @@ Quick features summary:
 * Restrict or allow access to the quotes and the relative operations in admin with fine grained access control 
 * Cleanup on uninstall
 
-For more informations and news please visit the official [project page](http://mgiulio.info/projects/mg-quotes/).
+~~For more informations and news please visit the official [project page](http://mgiulio.info/projects/mg-quotes/).~~ [Some additional info](https://www.pinterest.com/pin/119415827596386237/).
 
 **Manage the quotes**
 
@@ -139,6 +139,10 @@ To modify this template the 'mg_qt_quote_markup' filter is available. It it invo
 
 1. The generated html
 1. An associative array with the quote data. The available keys are: 'content', 'author', 'title', 'id'.
+
+**Source Code**
+
+The plugin source code is also availabe on [GitHub](https://github.com/mgiulio/mg-quotes).
   
 == Installation ==
 
